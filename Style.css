@@ -167,7 +167,7 @@
 }
 
 /*CSS Code for About Us.html*/
-#header-Wrapper {
+.header-Wrapper {
   background-image: url(/img/Header\ Banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -233,3 +233,8 @@
 }
 
 /*CSS Code for About Us.html end*/
+
+/*Code for new header */
+header img {
+  width: 100%;
+}
