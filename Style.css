@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 /*CSS Code for index.html*/
 
 /* Homepage background and gradient overlay */
@@ -237,4 +238,10 @@
 /*Code for new header */
 header img {
   width: 100%;
+}
+
+/*Contact us form*/
+#contact_us_form {
+  margin-left: 20%;
+  margin-right: 20%;
 }
