@@ -1,12 +1,17 @@
+/*global code*/
 * {
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
 }
+
+.remove_decoration {
+  list-style-type: none;
+}
 /*CSS Code for index.html*/
 
 /* Homepage background and gradient overlay */
-#homepage {
+.homepage {
   background: url(img/Homescreen\ Background.jfif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,7 +21,7 @@
   height: 100vh;
 }
 
-#homepage::after {
+.homepage::after {
   content: "";
   position: fixed;
   top: 0;
@@ -31,7 +36,7 @@
   z-index: 0;
 }
 
-#homepage > * {
+.homepage > * {
   z-index: 99;
   position: relative;
 }
@@ -132,7 +137,7 @@
 
 /*CSS Code for index.html end*/
 
-/* Code for Nav Bar */
+/* Code for Nav Bar - can be deleted when replaced with Bootstrap NavBar*/
 .nav-bar {
   list-style-type: none;
   margin: 0;
@@ -168,7 +173,7 @@
 
 /*CSS Code for About Us.html*/
 .header-Wrapper {
-  background-image: url(/img/Header\ Banner.jpg);
+  background-image: url(img/Header\ Banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,4 +242,52 @@
 /*Code for new header */
 header img {
   width: 100%;
+}
+
+/*Contact Us page Code*/
+
+#contact_us_image_div {
+  padding: 0;
+  padding-bottom: 5%;
+}
+
+#contact_us_image {
+  width: 100%;
+  max-height: 600px;
+}
+
+#submit_button {
+  background-color: rgb(70, 70, 70);
+  border-color: white;
+}
+
+#submit_button:hover {
+  background-color: rgb(39, 38, 38);
+}
+
+#message_us_left {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5%;
+}
+#message_us_right {
+  width: 50%;
+  padding-left: 10%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#google_maps_div {
+  padding-top: 7%;
+}
+
+#google_maps_title {
+  text-align: center;
+}
+
+/*Video Page Code*/
+
+#video_page_title {
+  text-align: center;
 }
