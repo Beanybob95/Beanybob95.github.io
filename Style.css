@@ -290,4 +290,10 @@ header img {
 
 #video_page_title {
   text-align: center;
+  padding-bottom: 5%;
+}
+
+.video_page_videos {
+  display: inline;
+  padding: 1.5%;
 }
