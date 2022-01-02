@@ -1,42 +1,112 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>
-      2cv Specialists | 2cv Parts & Spares | Citroen 2cv Rebuilds Restoration
+      Homepage - 2cv Specialists | 2cv Parts & Spares | Citroen 2cv Rebuilds
+      Restoration
     </title>
     <meta
-      name="description"
-      content="The 2cv Shop, the UK's premiere Citroen 2cv Specialists, we Rebuild Service and Repair 2cv's. Parts and Spares available in our Online Shop"
+      name="Homepage"
+      content="Landing page"
     />
     <meta charset="utf-8" />
     <meta name="robots" content="index, follow" />
     <link rel="icon" href="img/2cv Logo.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="Style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css" />
   </head>
-  <body class="homepage">
-    <h1 id="homepage-title">The 2CV Shop</h1>
-    <div>
-      <div class="blockquote-wrapper">
-        <div class="blockquote">
-          <h1>
-            "You might get the impression by reading our web site that I am
-            passionate about the 2cv…"
-          </h1>
-          <h4>&mdash; Darren Arthur</h4>
+  <body>
+    <header></header>
+      <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: rgb(70, 70, 70);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">The 2CV Shop</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">2CVs For Sale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">The 2CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://the2cvshop.co.uk/shop/"
+                  >The 2CV Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="About Us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Videos.html">Videos</a>
+              </li>
+             <li class="nav-item">
+                <a class="nav-link" href="Contact Us.html">Contact Us</a>
+              </li>
+            </ul>
+          </ul>
         </div>
-      </div>
-    </div>
+      </nav>
+      <header id="homepage_header">
 
-    <div id="homescreen-buttons-container">
-      <button class="homescreen-buttons">See Our 2CVs</button>
-      <button class="homescreen-buttons">Learn More About The 2CV</button>
-      <a href="https://the2cvshop.co.uk/shop/" target="-blank"
-        ><button class="homescreen-buttons">Shop 2CV</button></a
-      >
-      <a href="About Us.html"
-        ><button class="homescreen-buttons">About Us</button></a
-      >
-    </div>
+        <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+        <div class="overlay"></div>
+      
+        <!-- The HTML5 video element that will create the background video on the header -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="/img/2cv video.mp4" type="video/mp4">
+        </video>
+      
+        <!-- The header content -->
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-3">The 2cv Shop</h1>
+              <p class="lead mb-0">You might get the impression by reading our web site that I am passionate about the 2cv… - Darren</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Page section example for content below the video header -->
+      <section class="my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="mb-0">
+                Created by Leon Townsend</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>  
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
+    
