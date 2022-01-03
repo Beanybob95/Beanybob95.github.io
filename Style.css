@@ -67,40 +67,6 @@
 
 /*CSS Code for index.html end*/
 
-/* Code for Nav Bar - can be deleted when replaced with Bootstrap NavBar*/
-.nav-bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(70, 70, 70);
-  text-align: center;
-}
-/* Code for Nav Bar */
-.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-/* Code for Nav Bar */
-.nav-bar li {
-  border-right: 1px solid #bbb;
-  display: inline;
-}
-/* Code for Nav Bar */
-.nav-bar li a {
-  display: inline-block;
-  color: #fffed2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: x-large;
-}
-/* Code for Nav Bar */
-.nav-bar li a:hover {
-  background-color: rgb(46, 45, 45);
-}
-
 /*CSS Code for About Us.html*/
 .header-Wrapper {
   background-image: url(img/Header\ Banner.jpg);
@@ -216,6 +182,23 @@ header img {
   text-align: center;
 }
 
+/*JS Query to move page around if using a small screen resolution*/
+
+@media (max-width: 600px) {
+  /* Smaller screen, display inline */
+  #message_us_left {
+    display: inline;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Smaller screen, display inline */
+  #message_us_right {
+    display: inline;
+    width: auto;
+  }
+}
+
 /*Video Page Code*/
 
 #video_page_title {
@@ -223,7 +206,26 @@ header img {
   padding-bottom: 5%;
 }
 
-.video_page_videos {
+.video_page_videos_div {
   display: inline;
   padding: 1.5%;
+}
+
+.video_page_videos {
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 600px) {
+  /* Smaller screen, reduce video size */
+  .video_page_videos {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Smaller screen, reduce text size */
+  #video_page_title {
+    width: 300px !important;
+  }
 }
