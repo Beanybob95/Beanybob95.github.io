@@ -28,14 +28,14 @@
 
 /* Facebook */
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
   text-decoration: none;
 }
 
 /* Twitter */
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
   text-decoration: none;
 }
@@ -48,7 +48,7 @@
 
 /* Footer */
 footer {
-  background:rgb(70, 70, 70);
+  background: rgb(70, 70, 70);
   color: white;
 }
 
@@ -56,10 +56,9 @@ footer a {
   color: white;
 }
 
-.footer-copyright{
+.footer-copyright {
   background: rgb(80, 80, 80);
 }
-
 
 /*CSS Code for index.html*/
 
@@ -103,8 +102,6 @@ footer a {
   z-index: 1;
 }
 
-
-
 /* Media Query for devices withi coarse pointers and no hover functionality */
 
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
@@ -118,6 +115,10 @@ footer a {
   #homepage_header video {
     display: none;
   }
+}
+
+#homepage_welcome_message {
+  font-size: x-large;
 }
 
 /*CSS Code for index.html end*/
