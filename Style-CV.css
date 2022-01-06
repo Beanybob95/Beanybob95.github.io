@@ -17,10 +17,19 @@
 /* index.html */
 body {
   background-image: url(/img/Background.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+/* Smaller screen, remove background image */
+@media (max-width: 600px) {
+  body {
+    background-image: none;
+  }
 }
 
 /* About Me Container */
-.about_me_container {
+.about_me_section {
   position: absolute;
   left: 700px;
   top: 30px;
@@ -29,6 +38,17 @@ body {
   max-width: 60%;
   border: rgb(224, 224, 224) solid 5px !important;
   background-image: url(/img/Grey.png);
+}
+
+/* Smaller screen, display inline-block and remove background */
+@media (max-width: 600px) {
+  .about_me_section {
+    display: inline-block;
+    position: static !important;
+    max-width: 100%;
+    background-image: none;
+    border-radius: 0px;
+  }
 }
 
 .about_me_title {
@@ -67,6 +87,23 @@ body {
   border: rgb(224, 224, 224) solid 5px !important;
   max-width: 445;
   background-image: url(/img/Grey.png);
+}
+
+/* Smaller screen, remove background and border radius */
+@media (max-width: 600px) {
+  .personal_details_section_container {
+    background-image: none;
+    border-radius: 0px;
+  }
+}
+
+/* Smaller screen, display inline-block */
+@media (max-width: 600px) {
+  .personal_details_section {
+    display: inline-block;
+    position: static !important;
+    max-width: 100%;
+  }
 }
 
 .contact_info {
@@ -124,10 +161,20 @@ body {
   padding: 0;
 }
 
+@media (max-width: 600px) {
+  .leon_townsend_pic {
+    max-width: 320px;
+    min-width: 230px;
+    object-position: 0px 40%;
+  }
+}
+
 .card {
   border: rgb(224, 224, 224) solid 5px !important;
 }
 
 .restrict_card_size {
   min-height: 206px;
+  min-width: 246px !important;
+  display: inline;
 }
